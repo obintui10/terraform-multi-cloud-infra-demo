@@ -29,6 +29,7 @@ terraform init
 terraform plan
 terraform apply
 
+
 ## 📂 Repository Structure
 terraform-multi-cloud-infra-demo/
 │── aws/
@@ -63,7 +64,9 @@ terraform-multi-cloud-infra-demo/
 
 Below is a high‑level ASCII diagram of the AWS and Azure infrastructure provisioned by Terraform:
 
-AWS Cloud
+## 🏗️ Architecture (Box Style)
+
+### <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" width="40"/> AWS Cloud
 ┌───────────────────────────────┐
 │                               │
 │   ┌───────────────┐           │
@@ -92,7 +95,7 @@ AWS Cloud
 └───────────────────────────────┘
 
 
-Azure Cloud
+### <img src="https://cdn.worldvectorlogo.com/logos/azure-1.svg" width="40"/> Azure Cloud
 ┌───────────────────────────────┐
 │                               │
 │   ┌───────────────┐           │
@@ -121,8 +124,17 @@ Azure Cloud
 └───────────────────────────────┘
 
 
+
 ## 📖 Learning Outcomes
 - Demonstrates multi‑cloud provisioning with Terraform.
 - Shows understanding of networking, security, and compute across providers.
 - Provides a recruiter‑ready portfolio project with clean structure and documentation.
+
+## 🔮 Future Work
+- Add variables.tf and outputs.tf for parameterization  
+- Integrate Terraform modules for reusability  
+- Expand with load balancers, storage, and monitoring  
+- Add CI/CD pipeline for automated deployments  
+- Extend to GCP for full tri‑cloud demo  
+
 
