@@ -1,2 +1,127 @@
-# terraform-multi-cloud-infra-demo
-Infrastructure as Code demo using Terraform to provision scalable workloads across AWS and Azure.
+# Terraform Multi‑Cloud Infrastructure Demo
+
+[![Terraform](https://img.shields.io/badge/Terraform-v1.x-blue)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/AWS-Deployed-orange)](https://aws.amazon.com/)
+[![Azure](https://img.shields.io/badge/Azure-Deployed-blue)](https://azure.microsoft.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+Infrastructure as Code demo using **Terraform** to provision workloads across **AWS** and **Azure**.  
+This project showcases multi‑cloud engineering skills, networking/security best practices, and clean repo organization.
+
+---
+
+## 📂 Repository Structure
+terraform-multi-cloud-infra-demo/
+│── aws/
+│   └── main.tf        # AWS VPC, Subnet, IGW, Route Table, Security Group, EC2
+│── azure/
+│   └── main.tf        # Azure Resource Group, VNet, Subnet, NSG, VM
+│── README.md          # Project overview and usage
+│── LICENSE
+│── .gitignore
+
+
+---
+
+## ⚡ Quickstart
+
+### Deploy AWS Infrastructure
+```bash
+cd aws
+terraform init
+terraform plan
+terraform apply
+
+**### Deploy Azure Infrastructure**
+cd azure
+terraform init
+terraform plan
+terraform apply
+
+## 🔄 Workflow
+- Initialize Terraform → terraform init
+- Plan Infrastructure → terraform plan
+- Apply Changes → terraform apply
+- Destroy Resources → terraform destroy (when cleaning up)
+
+## 🚀 Features
+
+### ![AWS Logo](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws&logoColor=white)
+- VPC + Public Subnet  
+- Internet Gateway + Route Table  
+- Security Group (SSH + HTTP)  
+- EC2 Instance (Amazon Linux)  
+
+### ![Azure Logo](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoft-azure&logoColor=white)
+- Resource Group  
+- Virtual Network + Subnet  
+- Network Security Group (SSH + HTTP)  
+- Linux Virtual Machine (Ubuntu)  
+
+## 🏗️ Architecture (Box Style)
+
+Below is a high‑level ASCII diagram of the AWS and Azure infrastructure provisioned by Terraform:
+
+AWS Cloud
+┌───────────────────────────────┐
+│                               │
+│   ┌───────────────┐           │
+│   │ VPC           │           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ Subnet        │           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ Internet GW   │           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ Route Table   │           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ Security Group│           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ EC2 Instance  │           │
+│   └───────────────┘           │
+└───────────────────────────────┘
+
+
+Azure Cloud
+┌───────────────────────────────┐
+│                               │
+│   ┌───────────────┐           │
+│   │ Resource Group│           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ Virtual Net   │           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ Subnet        │           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ NSG           │           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ NIC           │           │
+│   └───────────────┘           │
+│       │                       │
+│   ┌───────────────┐           │
+│   │ Linux VM      │           │
+│   └───────────────┘           │
+└───────────────────────────────┘
+
+
+## 📖 Learning Outcomes
+- Demonstrates multi‑cloud provisioning with Terraform.
+- Shows understanding of networking, security, and compute across providers.
+- Provides a recruiter‑ready portfolio project with clean structure and documentation.
+
