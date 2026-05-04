@@ -8,6 +8,18 @@
 Infrastructure as Code demo using **Terraform** to provision workloads across **AWS** and **Azure**.  
 This project showcases multi‑cloud engineering skills, networking/security best practices, and clean repo organization.
 
+## 🚀 Features
+### ![AWS Logo](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws&logoColor=white)
+- VPC + Public Subnet  
+- Internet Gateway + Route Table  
+- Security Group (SSH + HTTP)  
+- EC2 Instance (Amazon Linux)  
+
+### ![Azure Logo](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoft-azure&logoColor=white)
+- Resource Group  
+- Virtual Network + Subnet  
+- Network Security Group (SSH + HTTP)  
+- Linux Virtual Machine (Ubuntu)  
 
 ## ⚡ Quickstart
 
@@ -42,19 +54,6 @@ terraform-multi-cloud-infra-demo/
 - Apply Changes → terraform apply
 - Destroy Resources → terraform destroy (when cleaning up)
 
-## 🚀 Features
-
-### ![AWS Logo](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws&logoColor=white)
-- VPC + Public Subnet  
-- Internet Gateway + Route Table  
-- Security Group (SSH + HTTP)  
-- EC2 Instance (Amazon Linux)  
-
-### ![Azure Logo](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoft-azure&logoColor=white)
-- Resource Group  
-- Virtual Network + Subnet  
-- Network Security Group (SSH + HTTP)  
-- Linux Virtual Machine (Ubuntu)  
 
 ## 🏗️ Architecture (Box Style)
 
