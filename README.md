@@ -65,9 +65,8 @@ terraform-multi-cloud-infra-demo/
 Below is a high‑level ASCII diagram of the AWS and Azure infrastructure provisioned by Terraform:
 ## 🏗️ Architecture (Box Style)
 
-### <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" width="40"/> AWS Cloud
+### ☁️🔶 AWS Cloud
 ┌───────────────────────────────┐
-│                               │
 │   ┌───────────────┐           │
 │   │ VPC           │           │
 │   └───────────────┘           │
@@ -94,9 +93,8 @@ Below is a high‑level ASCII diagram of the AWS and Azure infrastructure provis
 └───────────────────────────────┘
 
 
-### <img src="https://cdn.worldvectorlogo.com/logos/azure-1.svg" width="40"/> Azure Cloud
+### ☁️🔷 Azure Cloud
 ┌───────────────────────────────┐
-│                               │
 │   ┌───────────────┐           │
 │   │ Resource Group│           │
 │   └───────────────┘           │
