@@ -33,10 +33,6 @@ terraform-multi-cloud-infra-demo/
 │── .gitignore
 
 
-
-
-
-
 ## ⚡ Quickstart
 
 ### Deploy AWS Infrastructure
