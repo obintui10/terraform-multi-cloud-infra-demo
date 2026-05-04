@@ -8,11 +8,6 @@
 Infrastructure as Code demo using **Terraform** to provision workloads across **AWS** and **Azure**.  
 This project showcases multi‑cloud engineering skills, networking/security best practices, and clean repo organization.
 
----
-
-
-
----
 
 ## ⚡ Quickstart
 
@@ -22,6 +17,7 @@ cd aws
 terraform init
 terraform plan
 terraform apply
+
 
 **### Deploy Azure Infrastructure**
 cd azure
