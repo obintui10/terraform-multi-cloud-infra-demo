@@ -48,13 +48,6 @@ terraform-multi-cloud-infra-demo/
 │── LICENSE
 │── .gitignore
 
-## 🔄 Workflow
-- Initialize Terraform → terraform init
-- Plan Infrastructure → terraform plan
-- Apply Changes → terraform apply
-- Destroy Resources → terraform destroy (when cleaning up)
-
-
 ## 🏗️ Architecture (Box Style)
 
 Below is a high‑level ASCII diagram of the AWS and Azure infrastructure provisioned by Terraform:
@@ -115,6 +108,11 @@ Below is a high‑level ASCII diagram of the AWS and Azure infrastructure provis
 │   └───────────────┘           │
 └───────────────────────────────┘
 
+## 🔄 Workflow
+- Initialize Terraform → terraform init
+- Plan Infrastructure → terraform plan
+- Apply Changes → terraform apply
+- Destroy Resources → terraform destroy (when cleaning up)
 
 ## 📖 Learning Outcomes
 - Demonstrates multi‑cloud provisioning with Terraform.
