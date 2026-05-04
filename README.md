@@ -10,15 +10,6 @@ This project showcases multi‑cloud engineering skills, networking/security bes
 
 ---
 
-## 📂 Repository Structure
-terraform-multi-cloud-infra-demo/
-│── aws/
-│   └── main.tf        # AWS VPC, Subnet, IGW, Route Table, Security Group, EC2
-│── azure/
-│   └── main.tf        # Azure Resource Group, VNet, Subnet, NSG, VM
-│── README.md          # Project overview and usage
-│── LICENSE
-│── .gitignore
 
 
 ---
@@ -37,6 +28,16 @@ cd azure
 terraform init
 terraform plan
 terraform apply
+
+## 📂 Repository Structure
+terraform-multi-cloud-infra-demo/
+│── aws/
+│   └── main.tf        # AWS VPC, Subnet, IGW, Route Table, Security Group, EC2
+│── azure/
+│   └── main.tf        # Azure Resource Group, VNet, Subnet, NSG, VM
+│── README.md          # Project overview and usage
+│── LICENSE
+│── .gitignore
 
 ## 🔄 Workflow
 - Initialize Terraform → terraform init
