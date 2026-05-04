@@ -21,6 +21,22 @@ This project showcases multi‑cloud engineering skills, networking/security bes
 - Network Security Group (SSH + HTTP)  
 - Linux Virtual Machine (Ubuntu)  
 
+## 📂 Repository Structure
+```bash
+terraform-multi-cloud-infra-demo/
+│── aws/
+│   └── main.tf        # AWS VPC, Subnet, IGW, Route Table, Security Group, EC2
+│── azure/
+│   └── main.tf        # Azure Resource Group, VNet, Subnet, NSG, VM
+│── README.md          # Project overview and usage
+│── LICENSE
+│── .gitignore
+
+
+
+
+
+
 ## ⚡ Quickstart
 
 ### Deploy AWS Infrastructure
@@ -36,17 +52,6 @@ cd azure
 terraform init
 terraform plan
 terraform apply
-
-
-## 📂 Repository Structure
-terraform-multi-cloud-infra-demo/
-│── aws/
-│   └── main.tf        # AWS VPC, Subnet, IGW, Route Table, Security Group, EC2
-│── azure/
-│   └── main.tf        # Azure Resource Group, VNet, Subnet, NSG, VM
-│── README.md          # Project overview and usage
-│── LICENSE
-│── .gitignore
 
 ## 🏗️ Architecture (Box Style)
 
