@@ -131,15 +131,13 @@ Below is a high‑level ASCII diagram of the AWS and Azure infrastructure provis
 ## 🏗️ Architecture (Mermaid)
 ```mermaid
 flowchart LR
-    subgraph AWS["☁️ 🔶 AWS Cloud"]
-        VPC --> Subnet --> IGW --> RT --> SG --> EC2
-    end
+  subgraph AWS["☁️ AWS Cloud"]
+    VPC --> Subnet --> IGW --> RT --> SG --> EC2
+  end
 
-    subgraph Azure["☁️ 🔷 Azure Cloud"]
-        RG --> VNet --> SubnetA --> NSG --> NIC --> VM
-    end
-
-    end
+  subgraph Azure["☁️ Azure Cloud"]
+    RG --> VNet --> SubnetA --> NSG --> NIC --> VM
+  end
 
 
 
