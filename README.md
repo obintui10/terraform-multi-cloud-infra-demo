@@ -126,5 +126,32 @@ Below is a high‑level ASCII diagram of the AWS and Azure infrastructure provis
 - Expand with load balancers, storage, and monitoring  
 - Add CI/CD pipeline for automated deployments  
 - Extend to GCP for full tri‑cloud demo  
+```
+
+## 🏗️ Architecture (Mermaid)
+```mermaid
+flowchart TB
+    subgraph AWS["☁️ 🔶 AWS Cloud"]
+        VPC[VPC]
+        Subnet[Subnet]
+        IGW[Internet Gateway]
+        RT[Route Table]
+        SG[Security Group]
+        EC2[EC2 Instance]
+
+        VPC --> Subnet --> IGW --> RT --> SG --> EC2
+    end
+
+    subgraph Azure["☁️ 🔷 Azure Cloud"]
+        RG[Resource Group]
+        VNet[Virtual Network]
+        SubnetA[Subnet]
+        NSG[Network Security Group]
+        NIC[NIC]
+        VM[Linux VM]
+
+        RG --> VNet --> SubnetA --> NSG --> NIC --> VM
+    end
+
 
 
