@@ -146,7 +146,7 @@ flowchart LR
 ```
 ```mermaid
 %% Azure Diagram
-flowchart TD
+flowchart LR
   subgraph Azure["☁️ Azure Cloud"]
     RG --> VNet --> SubnetA --> NSG --> NIC --> VM
   end
